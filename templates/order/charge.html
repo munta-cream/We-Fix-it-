@@ -1,0 +1,56 @@
+{% extends 'base.html' %} {% block title %} Your Shoping Cart| Payment {% endblock %} {% block content %}
+
+<div class="container">
+    <div class="row" style="margin-top: 6%;">
+        <div class="col-md-8 col-md-offset-2">
+            <h4 class="page-header">Thank You for Shoping With Us </h4>
+            <p>Mr. {{order.first_name}} {{order.last_name}} Your order has been successfull compitatde.your order number is <strong> {{order_id}} </strong></p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center"><strong>Your Ordes</strong></h2>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mt-5" style="height: auto">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Order Id</th>
+                                <th scope="col">Products</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            {% for item in orderItem %}
+                            <tr>
+                                <td>{{item.id}}</td>
+                                <td>{{item.order}}</td>
+                                <td>{{item.product}}</td>
+                                <td>{{item.price }}</td>
+                                <td>{{item.quantity}}</td>
+                                <td>Continue</td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="7" class="text-center bg-warning"> No Record Found </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 my-5 text-center">
+            <a href="/" class="btn btn-success">Back to Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

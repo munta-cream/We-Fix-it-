@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ service.model_name }}</h2>
+<img src="{{ service.image.url }}" alt="{{ service.model_name }}">
+<p>Price: {{ service.price }}</p>
+<p>{{ service.details }}</p>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Add to Cart</button>
+</form>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block  content  %}
+
+<div >
+    <h3> Order Information </h3>
+    <hr/>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">First Name</label>
+        <div class="col-sm-4">
+         <input type="text" name="first_name" required  maxlenth="20" value="{{order.first_name}}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Last Name</label>
+        <div class="col-sm-4">
+         <input type="text" name="last_name" required  maxlenth="20" value="{{order.last_name}}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Email Address </label>
+        <div class="col-sm-4">
+         <input type="text" name="email" required  maxlenth="20" value="{{order.email}}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Phone </label>
+        <div class="col-sm-4">
+         <input type="text" name="Phone" required  maxlenth="20" value="{{order.phone}}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Problems </label>
+        <div class="col-sm-4">
+         <input type="text" name="problems" required   value="{{order.problems}}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Address </label>
+        <div class="col-sm-4">
+         <input type="text" name="address" required  maxlenth="20" value="{{order.address}}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Postal Code </label>
+        <div class="col-sm-4">
+         <input type="text" name="postal_code" required  maxlenth="20" value="{{order.postal_code}}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">City </label>
+        <div class="col-sm-4">
+         <input type="text" name="city" required  maxlenth="20" value="{{order.city}}">
+        </div>
+    </div>
+</div>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Order</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in orderItem  %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.order}}</td>
+            <td>{{item.product}}</td>
+            <td>{{item.price }}</td>
+            <td>{{item.quantity}}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="7" class="text-center bg-warning"> No Record Found </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+    <a href="{}" class="btn btn-primary"> Back to List</a>
+
+
+{% endblock    %}

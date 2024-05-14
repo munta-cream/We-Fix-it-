@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-4 mb-4 p-3 d-flex justify-content-center"> 
+    <div class="card p-4" style="height:450px"> 
+        <div class=" image d-flex flex-column justify-content-center align-items-center" style=" left: 30px; bottom: 30px;">
+             <h3 class="name mt-3">{{ request.user.username}}</h3> 
+             <span class="idd">{{ request.user.email}}</span> <br><br><br>
+            
+            <h5>Delivery Status: {{ user_profile.delivery_status }}</h5><br>
+            <h5>Payment Details: {{ user_profile.payment_details }}</h5><br><br>
+           
+             
+            <div class=" d-flex mt-2"> 
+                <button class="btn1 btn-dark"><a class="nav-link" href="{% url 'edit' %}">Edit Profile</a></button> 
+            </div> 
+        </div> 
+    </div>                
+</div>
+
+{% comment %}
+<h2>User Profile</h2>
+
+<h3>Messages</h3>
+<a class="nav-link" href="{% url 'edit' %}">Edit Profile</a>
+ <ul>
+{% for message in messages %}
+    <li>
+        <strong>From:</strong> {{ message.sender }}<br>
+        <strong>Subject:</strong> {{ message.subject }}<br>
+        <strong>Message:</strong> {{ message.message }}<br>
+        <em>Sent at: {{ message.sent_at }}</em>
+    </li>
+{% endfor %}
+</ul> {% endcomment %}
+{% endblock %}

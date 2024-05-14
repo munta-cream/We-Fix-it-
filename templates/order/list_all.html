@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block  content  %}
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Problems</th>
+            <th>Address</th>
+            <th>Postal Code </th>
+            <th>City</th>
+            <th>Paid</th>
+            <th>Created </th>
+            <th>Updated</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in order  %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.phone}}</td>
+            <td>{{item.problems}}</td>
+            <td>{{item.address }}</td>
+            <td>{{item.postal_code}}</td>
+            <td>{{item.city}}</td>
+            <td>{{item.paid }}</td>
+            <td>{{item.created}}</td>
+            <td>{{item.updated}}</td>
+            <td>
+                <a href="{% url 'order_list' item.id %}"><i class='fa fa-info-circle' style='font-size:32px;color:blue'></i>Detailes</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="7" class="text-center bg-warning"> No Record Found </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+    <a href="{}" class="btn btn-primary"> Back to List</a>
+
+
+{% endblock    %}

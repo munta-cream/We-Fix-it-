@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} {{title}} {% endblock %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+   <div class="row" style="margin-top:6%;">
+       <div class="col-sm-4">
+         <img src="{{product.image.url}}" alt="..." srcset="" style="height: 200px; width: auto;">
+       </div>
+        <div class="col-sm-8" style="padding-left: 1px;">
+            <h3>{{product.name}}</h3>
+            <h6> Category:
+               <a href="#">{{product.category}}</a>    
+            </h6>
+            <p>{{product.description|safe|linebreaksbr}}</p>
+            <p class="text-muted">
+                <img src="{% static 'image/tk1.png' %}" alt=".." srcset="" width="10%">
+                {{product.price}}
+            </p>
+            <form action="{% url 'cart_add' product.id %}" method="POST" >
+               {% csrf_token %}
+               {% if user.is_authenticated %}
+                  {{cart_product_from}}
+                  <p><input type="submit" value="Add To Cart" class="btn btn-primary"></p>
+               {% else %}
+                  <p>Please <a href="{% url 'login' %}">login</a> to add items to your cart.</p>
+              {% endif %}
+               </form>
+        </div>
+   </div>
+</div>
+
+
+{% endblock %}

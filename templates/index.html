@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% load  static %}
+
+{% block content %}
+
+
+<main class="inea-main">
+    <section>
+    <div class="phder">
+        <h1 class="title">Mobile Repairs are Done Perfectly by Skilled Technicians.</H1>
+        <div class="slide_up">
+            <p>We fix it mobile repair shop offers expert services to diagnose and fix issues with smartphones and other mobile devices. 
+            From cracked screens and battery replacements to software troubleshooting, these shops provide comprehensive solutions to restore functionality. 
+            Skilled technicians utilize advanced tools to efficiently address hardware and software issues, ensuring prompt and reliable repairs. With a focus on 
+            customer satisfaction, mobile repair shops play a crucial role in extending the lifespan and usability of mobile devices.</p>
+        </div>
+        <div class="slide_show">
+            <Figure class="figure">
+            <img src="{% static 'images/240_F_519733648_tSMSHwqxw3TrbgFSXNKJVKncdkC0siTq.jpg' %}" alt="">
+            <img src="{% static 'images/240_F_378626448_DHr66za1X87JoJqlKox2xnvrMp57HucK (1).jpg' %}" alt="">
+            <img src="{% static 'images/240_F_378626762_nW2NpqyNcpyg8ZEtambgxYqJhWT5HEKv.jpg' %}" alt="">
+            <img src="{% static 'images/240_F_500961652_ewumiB56v0vQopHvLIBTnTDeUF4SVBJq.jpg' %}" alt="">
+            <img src="{% static 'images/240_F_502615574_O3gXKZapzRe823x3TTkVWQB0Xg1BzdSd.jpg' %}" alt="">
+            </Figure>
+        </div>
+        </div>
+    </section>
+    <section class="in-section">
+    <div class="our-team">
+    <h2>Our Skilled Team</h2>
+    <P>Our skilled team specializes in proficient mobile repairs, ensuring swift and effective solutions to get your devices back in optimal condition. Trust us for expert service and reliable results.</P>
+    {% comment %} <h2>{{ technician.name }}</h2>
+        <img src="{{ technician_picture.url }}" alt="{{ technician.name }}"> {% endcomment %}
+    <div class="team-member">
+        <img src="{% static 'images/r1.jpg' %}" alt="Mark Steven">
+        <h3>MD PARVEZ BHUIYAN</h3>
+        <p>Manager</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/r2.jpg' %}" alt="Steve Martin">
+        <h3>ANKAN CHOWDHURY</h3>
+        <p>Software Engineer</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/r3.jpg' %}" alt="David Luis">
+        <h3>MUNTHAKIM BIN</h3>
+        <p>Hardware Engineer</p>
+    </div> 
+    </div>
+    </section>
+    <section>
+    <div class="our-team">
+        <h2>Customers Reviews</h2>
+    <div class="review-card">
+        <div class="user-info">
+            <img src="{% static 'images/r4.png' %}" alt="User Avatar">
+            <h3>John Doe</h3>
+        </div>
+        <p class="review-text">
+            "Best platform to make mobile phones A one in the cheapest rate"
+        </p>
+        <div class="rating">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+            <span>&#9734;</span>
+        </div>
+
+            
+        </div>
+    </section>
+    
+</main>
+{% endblock content %}

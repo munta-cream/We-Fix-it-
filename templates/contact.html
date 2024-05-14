@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<main class="conm">
+    <section class="cont" >
+      <div class="contact" style="
+      margin-left: 010px;
+      margin-right: 10px;">
+        <div class="up1">
+        <div class="pa">
+        <h1>Contact</h1>
+                  <p class="u-text u-text-2"> Use our contact form for all information requests or contact us directly using the contact information below. <br>
+                    <br>For all your mobile repair needs, feel free to visit us at
+                  </p>
+                </div>
+                <div class="pic">
+                  <img class="u-image u-image-contain u-image-default u-image-1" src="//images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/edaa5e11cbf25912ba08677a/Untitled-1.png" alt="" data-image-width="467" data-image-height="477">
+                </div>
+            
+        </div>
+        <div class="up2">
+        <div class="clok"><span><img src="data:image/png;base64,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" alt=""></span>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-4"> https://maps.app.goo.gl/zd2eTkwM5iSPLXZ47</h6>
+                <p class="u-text u-text-5"> <b>Address:</b> 123 Main Street, City: Dhaka, Country: Bangladesh</p>
+              </div>
+        <div class="cphone"><span><img src="data:image/png;base64,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" alt=""></span>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-6"> Phone (Landline)</h6>
+                <p class="u-text u-text-7">Contact Number: +1234567890 <br>+8801581839652</p>
+                
+              </ul>
+              </div>
+            </div>
+              <div class="cphone">
+                <p>Shop Hours:</p>
+                <ul>
+                  <li>Monday-Friday: 9:00 AM - 6:00 PM</li>
+                  <li>Saturday: 10:00 AM - 4:00 PM</li>
+                  <li>Sunday: Closed</li>
+              </div>
+              
+      </div>
+    </section>
+    </main>
+    {% comment %} <p>For all your mobile repair needs, feel free to visit us at:</p>
+    <p>Location: 123 Main Street, City, Country</p>
+    <p>Contact Number: +1234567890</p>
+    <p>Shop Hours:</p>
+    <ul>
+        <li>Monday-Friday: 9:00 AM - 6:00 PM</li>
+        <li>Saturday: 10:00 AM - 4:00 PM</li>
+        <li>Sunday: Closed</li>
+    </ul> {% endcomment %}
+    {% endblock content %}
