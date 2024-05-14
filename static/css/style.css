@@ -1,0 +1,467 @@
+/* foooter new */
+footer {
+    background-color: #929293;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social-icons a img {
+    height: 55px;
+  }
+  
+  .body{
+    min-height: 100px;
+      width: 100%;
+      background-image: url(../Media/bg2.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    
+  }
+  /* contoct */
+.conm{
+    background-color: #fff;
+}
+.contact{
+    margin: 0% 15%;
+    font-size: 15px;
+    
+    
+    
+  }
+  .up1{
+    height: 40%;
+  }
+  .pa{
+    width: 400px;
+    height: 600px;
+    float: left;
+    font-size: 25px;
+  }
+  .pa p{
+    font-size: 18;
+  }
+  .up2{
+    height: 400px;
+    margin: 15%;
+  }
+  .clok{
+    text-align: left;
+    float: left;
+    width: 100px;
+  }
+  .cphone{
+    float: right;
+  }
+  /* contoct end */
+  /* Login Form */
+.login-form {
+    padding: 20px;
+    max-width: 50rem;
+    margin: 50px auto;
+    border: #04020b solid;
+  }
+  
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form form h1 {
+    margin-bottom: 1rem;
+  }
+  .login-form form p {
+    margin-bottom: 2rem;
+  }
+  
+  .login-form form label {
+    margin-bottom: 1rem;
+    font-size: 25px;
+  }
+  
+  .login-form form input {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: .5rem 0;
+    text-indent: 0.6rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .login-form form input::placeholder {
+    font-size: 1.6rem;
+    color: #222;
+  }
+  
+  .login-form form .buttons {
+    margin-top: 1rem;
+  }
+  
+  .login-form form button {
+    outline: #062874;
+    border: #4a077c;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin-right: 1.5rem;
+    background-color: #04003a;
+    color: bisque;
+    cursor: pointer;
+    float: right;
+  }
+  .login-form select{
+    height: 32px;
+  }
+  .btnlogin{
+    color: bisque;
+    font-style: normal;
+  }
+  .login-form form p a {
+    color: dodgerblue;
+  }
+  .cd{
+    
+    font-size: 35px;
+  }
+
+ /* slide show */
+.figure img{
+  float: left;
+  width: 20%;
+}
+.slide_show{
+  overflow: hidden;
+  border-radius: 5%;
+  width: 40%;
+  height: 35%;
+  margin: auto;
+
+}
+figure{ 
+  position: relative;
+  width: 500%;
+  animation: 15s slider infinite;
+  margin: 0;
+  padding: 0;
+}
+@keyframes slider{
+  20%{
+      left: 0;
+  }    
+  40%{
+      left: -100%;
+  }    
+  60%{
+      left: -200%;
+  }    
+  80%{
+      left: -300%;
+  }    
+  100%{
+      left: -400%;
+  }
+}
+.slide_up{
+width: 40%;
+float: left;
+margin-left: 20px;
+
+}
+.slide_up p {
+text-align: left;
+font-size: 15px;
+
+}
+/* teem mambers */
+.our-team {
+background-color: #ddd;
+padding: 1em;
+text-align: center;
+}
+.team-member {
+background-color: #eee;
+border: 1px solid #ddd;
+display: inline-block;
+font-size: 0.8em;
+margin: 1em;
+padding: 1em;
+width: 25%;
+height: 280px;
+}
+.team-member img {
+border-radius: 50%;
+height: 150px;
+width: 150px;
+}
+.team-member h3 {
+margin: 0.5em 0;
+}
+/* teem mambers end*/
+/* customer reviews */
+.review-card {
+background-color: #ddd;
+padding: 1em;
+text-align: center;
+width: 20%;
+height: 280px;
+}
+
+.user-info {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.user-info img {
+border-radius: 50%;
+height: 100px;
+width: 100px;
+}
+
+.user-info h3 {
+margin: 0;
+}
+
+.review-text {
+font-size: 16px;
+color: #555;
+margin-bottom: 15px;
+}
+
+.rating {
+font-size: 24px;
+color: #ffd700; /* Gold color for stars */
+}
+
+.rating span {
+margin-right: 5px;
+}
+/* customer reviews end */
+
+.category{
+  
+  height: 40%;
+  width: 30%;
+  margin-top: 10px;
+ float: inline-start;
+
+}
+/* payment */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+       body{
+        background-color:#f5eee7;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+       }
+
+       .container{
+
+        height: 100vh;
+
+       }
+
+       .card{
+
+        border: none;
+       }
+
+       .card-header {
+            padding: .5rem 1rem;
+            margin-bottom: 0;
+            background-color: rgba(0,0,0,.03);
+            border-bottom: none;
+        }
+
+        .btn-light:focus {
+            color: #212529;
+            background-color: #e2e6ea;
+            border-color: #dae0e5;
+            box-shadow: 0 0 0 0.2rem rgba(216,217,219,.5);
+        }
+
+        .form-control{
+
+          height: 50px;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    font-size: 14px;
+        }
+
+        .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #039be5;
+    outline: 0;
+    box-shadow: none;
+
+    }
+
+    .input{
+
+      position: relative;
+    }
+
+    .input i{
+
+          position: absolute;
+    top: 16px;
+    left: 11px;
+    color: #989898;
+    }
+
+    .input input{
+
+      text-indent: 25px;
+    }
+
+    .card-text{
+
+      font-size: 13px;
+    margin-left: 6px;
+    }
+
+    .certificate-text{
+
+      font-size: 12px;
+    }
+
+       
+    .billing{
+      font-size: 11px;
+    }  
+
+    .super-price{
+
+          top: 0px;
+    font-size: 22px;
+    }
+
+    .super-month{
+
+          font-size: 11px;
+    }
+
+
+    .line{
+      color: #bfbdbd;
+    }
+
+    .free-button{
+
+          background: #1565c0;
+    height: 52px;
+    font-size: 15px;
+    border-radius: 8px;
+    }
+
+
+    .payment-card-body{
+
+    flex: 1 1 auto;
+    padding: 24px 1rem !important;
+
+    }
+
+/* product */
+body{
+  background-color:#dce3f0;
+  height: 100%;
+}
+
+.height{
+  
+  height:150vh;
+}
+
+.card{
+  
+  width:40%;
+  height:50%;
+}
+
+.image{
+  position:absolute;
+  right:12px;
+  top:10px;
+}
+
+.main-heading{
+  
+  font-size:40px;
+  color:red !important;
+}
+
+.ratings i{
+  
+  color:orange;
+  
+}
+
+.user-ratings h6{
+  margin-top:2px;
+}
+
+.colors{
+  display:flex;
+  margin-top:2px;
+}
+
+.colors span{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  cursor:pointer;
+  display:flex;
+  margin-right:6px;
+}
+
+.colors span:nth-child(1) {
+  
+  background-color:red;
+  
+}
+
+.colors span:nth-child(2) {
+  
+  background-color:blue;
+  
+}
+
+.colors span:nth-child(3) {
+  
+  background-color:yellow;
+  
+}
+
+.colors span:nth-child(4) {
+  
+  background-color:purple;
+  
+}
+
+.btn-danger{
+  
+  height:48px;
+  font-size:18px;
+}
